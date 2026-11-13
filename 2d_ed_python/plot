@@ -1,0 +1,10 @@
+set datafile separator ","
+set key autotitle columnhead
+set grid
+set xlabel "1/L"
+
+p \
+"dat_2d_summary.csv" using (1.0/column("L")):(-column("energy_density")) w p lc 1 ti "- energy_density", \
+"dat_2d_summary.csv" using (1.0/column("L")):(column("sigma_z")) w p lc 3 ti "sigma_z", \
+1/0 ti ""
+pause -1

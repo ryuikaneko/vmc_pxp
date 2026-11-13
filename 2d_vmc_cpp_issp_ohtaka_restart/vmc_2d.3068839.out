@@ -1,0 +1,48 @@
+========== job information ==========
+Job ID       : 3068839
+Node list    : c15u01n[1-2]
+Number nodes : 2
+MPI ranks    : 128
+CPUs/task    : 1
+Working dir  : /work/k0528/k052800/test_20260919_2_pxp/2d_cpp_issp_ohtaka_restart_2
+Start time   : Mon Sep 21 16:55:16 JST 2026
+
+========== loaded modules ==========
+Currently Loaded Modulefiles:
+ 1) oneapi_compiler/2023.0.0   2) openmpi/4.1.5-oneapi-2023.0.0-classic  
+
+========== MPI environment ==========
+mpicxx path:
+/home/local/ap/openmpi/4.1.5-oneapi-2023.0.0-classic/bin/mpicxx
+
+mpicxx backend:
+icpc -I/home/local/ap/openmpi/4.1.5-oneapi-2023.0.0-classic/include -pthread -L/home/local/ap/openmpi/4.1.5-oneapi-2023.0.0-classic/lib -Wl,-rpath -Wl,/home/local/ap/openmpi/4.1.5-oneapi-2023.0.0-classic/lib -Wl,--enable-new-dtags -lmpi
+
+========== executable ==========
+-rwxr-xr-x 1 k052800 k0528 1.4M Sep 20 22:37 code_vmc_2d
+code_vmc_2d: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=8052c888414691c943ece4473c6d61ea9530cca6, not stripped
+
+Shared-library check: OK
+
+========== calculation ==========
+N=196, Kasteleyn/projective parameters=394, initializer residual=5.551115e-16, restart_completed=3190, initial_noise=1.000000e-06
+Kasteleyn-kernel sigma_min=6.293842e-01; symmetry residuals Tx=0.000000e+00, Ty=0.000000e+00
+SR 3190 E=-100.2340492164 var=2.4570137166e-01 |g|=1.4403272032e+00 acc=0.435
+SR 3200 E=-100.2305327836 var=4.3655759456e-01 |g|=8.9634583859e+00 acc=0.435
+SR 3210 E=-100.2369641922 var=3.2747914695e-01 |g|=3.5903925019e+00 acc=0.435
+SR 3220 E=-100.2307723289 var=3.4010551492e-01 |g|=2.4098223319e+00 acc=0.435
+SR 3230 E=-100.2455508854 var=2.6311826223e-01 |g|=1.3305958776e+00 acc=0.435
+SR 3240 E=-100.2215184028 var=3.4086357676e-01 |g|=3.6065659012e+00 acc=0.435
+SR 3250 E=-100.2331315622 var=2.3591969422e-01 |g|=7.8106328035e-01 acc=0.435
+SR 3260 E=-100.2335445657 var=2.7418656359e-01 |g|=1.1795143171e+00 acc=0.434
+SR 3270 E=-100.2348320525 var=3.3684936617e-01 |g|=2.3403768231e+00 acc=0.434
+SR 3280 E=-100.2426857810 var=2.6521768428e-01 |g|=1.2027598578e+00 acc=0.435
+SR 3289 E=-100.2427600028 var=2.8720398442e-01 |g|=2.5266157409e+00 acc=0.435
+VMC total energy=-100.232720425365 +/- 1.617642208740e-03; energy density=-5.113914307417e-01; acc=0.434
+V-score=6.911e-03 +/- 5.441e-04 (E_inf=0)
+final projective symmetry residuals: Tx=0.000e+00, Ty=0.000e+00
+saved under: "dat/Lx14_Ly14_jx1_jn0_jp0"
+
+========== finished ==========
+End time : Mon Sep 21 17:24:40 JST 2026
+Exit code: 0
