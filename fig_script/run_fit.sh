@@ -28,3 +28,13 @@ cp wavefunc_plots_1d/pairing_parameters_initial_optimized.pdf fig_2.pdf
 cp wavefunc_plots_1d/wavefunction_initial_optimized_exact.pdf fig_3.pdf
 cp finite_size_plots_1d/jx1_jn0_jp0/combined_observables_vs_inverse_L.pdf fig_4.pdf
 cp finite_size_plots_2d/jx1_jn0_jp0_aspect1/combined_observables_vs_inverse_sqrtN.pdf fig_5.pdf
+
+
+
+for i in \
+fig_1.pdf
+do
+  gs -o _${i} -dNoOutputFonts -sDEVICE=pdfwrite ${i}
+  pdfcrop _${i} ${i}
+  rm _${i}
+done
